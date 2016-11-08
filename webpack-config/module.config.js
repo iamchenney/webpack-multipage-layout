@@ -5,7 +5,7 @@ module.exports = {
     test: /\.js$/,
     loader: 'eslint',
     include: dirVars.srcRootDir,
-    exclude: [/bootstrap/],
+    exclude: [/bootstrap/, dirVars.vendorDir],
   }],
 
   loaders: [
@@ -15,7 +15,7 @@ module.exports = {
     },
     {
       test: /\.css$/,
-      exclude: /node_modules|bootstrap/,
+      // exclude: /node_modules|bootstrap/,
       loader: ExtractTextPlugin.extract('css?minimize&-autoprefixer!postcss'),
     },
     {
