@@ -1,0 +1,154 @@
+<div class="page-wrapper">
+  <div class="spinner1">
+      <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+      </div>
+  </div>
+
+  <div class="leader">
+      概览
+  </div>
+  <div class="clear" style="margin-bottom:20px;margin-top:20px;display: none;">
+      <div class="zhan-1">
+          <div class="gailan-nei1">
+              <p class="gailan-zhanxian-1 clear">
+                  <span class="zuo1">
+                      <img src="./images/展现量.png" alt=""/>
+                      展现量
+                  </span>
+                  <span class="you1 show">
+                      Loading...
+                  </span>
+              </p>
+              <p class="clear gailan-zhanxian-2">
+                  <span class="zuo2">
+                      同比
+                  </span>
+                  <span class="you2">
+                      <img src="./images/增.png" class="zeng" alt=""/>
+                      <span class="tb">0.0%</span>
+                  </span>
+              </p>
+              <p class="gailan-zhanxian-3">
+                  <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                           aria-valuemin="0" aria-valuemax="100" style="width:8.3%;">
+                      </div>
+                  </div>
+              </p>
+          </div>
+          <div class="gailan-nei2 clear">
+              <span>
+                      <p style="font-size: 16px;color: #666666;">本月消费</p>
+                      <p style="font-size:20px;color: #333;font-weight: bold" class="month">Loading...</p>
+              </span>
+              <span>
+                      <p style="font-size: 16px;color: #666666;">昨日消费</p>
+                      <p style="font-size:20px;color: #333;font-weight: bold" class="yesterday">Loading...</p>
+              </span>
+              <span>
+                      <p style="font-size: 16px;color: #666666;">今日消费</p>
+                      <p style="font-size:20px;color: #333;font-weight: bold" class="today">Loading...</p>
+              </span>
+          </div>
+      </div>
+      <div class="zhan-2">
+          <p class="gailan-zhanxian-1 clear">
+                  <span class="zuo1">
+                      <img src="./images/点击量.png" alt=""/>
+                      点击量
+                  </span>
+                  <span class="you1 pv" data-toggle="tooltip" data-placement="bottom">
+                      Loading...
+                  </span>
+          </p>
+          <div class="biao1">
+              <p class="biao1-1">
+              </p>
+              <p class="biao1-2">
+                  点击率
+              </p>
+          </div>
+          <p id="pie" style="height:180px;width:300px;margin:10px auto 0;">
+
+          </p>
+      </div>
+      <div class="zhan-3">
+          <div class="yushan-yin1">
+              <p class="gailan-zhanxian-1 clear">
+                  <span class="zuo1">
+                      <img src="./images/下载量.png" alt=""/>
+                      <span class="dow">下载量</span>
+                  </span>
+                  <span class="you1 download" data-toggle="tooltip" data-placement="bottom">
+                      Loading...
+                  </span>
+              </p>
+              <div class="biao2">
+                  <p class="biao2-1">
+                  </p>
+                  <p class="biao2-2">
+                     下载率
+                  </p>
+              </div>
+              <p id="pie1" style="height:180px;width:300px;margin:10px auto 0;">
+
+              </p>
+              <p style="text-align: right;">
+                  <img src="./images/颜色填充-6-拷贝-5@2x.png" class="start" alt=""/>
+              </p>
+          </div>
+          <div class="yushan-yin2">
+              <p class="gailan-zhanxian-1 clear">
+                  <span class="zuo1">
+                      <img src="./images/激活.png" alt=""/>
+                      激活量
+                  </span>
+                  <span class="you1 active" data-toggle="tooltip" data-placement="bottom">
+                      Loading...
+                  </span>
+              </p>
+              <div class="biao3">
+                  <p class="biao3-1">
+                  </p>
+                  <p class="biao3-2">
+                      激活率
+                  </p>
+              </div>
+              <p id="pie2" style="height:180px;width:300px;margin:10px auto 0;">
+
+              </p>
+              <p style="text-align: right;">
+                  <img src="./images/转化icon.png" class="start1" alt=""/>
+              </p>
+          </div>
+
+      </div>
+  </div>
+  <div class="yushan-all">
+      <p>
+          <div class="dropdown">
+              <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">近两周总体数据
+                  <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="javascript:void(0)" class="near_twoweek">近两周总体数据</a>
+                  </li>
+                  <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="javascript:void(0)" class="near_week">每周总消费趋势</a>
+                  </li>
+              </ul>
+          </div>
+      </p>
+      <div id="main" style="height:650px;width:96%;margin-top: 10px;padding-bottom: 100px;margin-left: 2%;"></div>
+      <div id="main1" style="height:650px;width:96%;margin-top: 10px;padding-bottom: 100px;margin-left: 2%;"></div>
+  </div>
+</div>
+
+
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>

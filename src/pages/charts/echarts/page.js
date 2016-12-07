@@ -1,5 +1,5 @@
 require('cp');
-const utils = require('utils');
+const utils = require('static/js/utils');
 const config = require('configModule');
 const echarts = require('echarts');
 
