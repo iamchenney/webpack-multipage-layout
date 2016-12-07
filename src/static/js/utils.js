@@ -18,7 +18,7 @@ const moduleExports = {
   },
 
   getUrlParameter(paramName) {
-    var sValue = location.search.match(new RegExp("[\?\&]" + param + "=([^\&]*)(\&?)", "i"));
+    var sValue = location.search.match(new RegExp("[\?\&]" + paramName + "=([^\&]*)(\&?)", "i"));
     return sValue ? sValue[1] : sValue;
   },
 
@@ -106,7 +106,7 @@ const moduleExports = {
 
     $.ajax({
       url: url,
-      type: 'post',
+      type: 'get',
       async: async,
       dataType: 'json',
       data: data,
