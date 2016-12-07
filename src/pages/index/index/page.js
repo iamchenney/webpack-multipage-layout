@@ -12,6 +12,9 @@ $(() => {
     console.log(config.API_ROOT);
   }
 
+  sessionStorage.setItem('userName', 'wangxiaobin');
+  localStorage.setItem('userName', 'local_wangxiaobin');
+
   new Swiper('.swiper-container', {
     direction: 'horizontal',
     loop: true,
@@ -29,5 +32,7 @@ $(() => {
 
   console.log(utils.dateFormat(new Date(), 'yyyy-MM-dd hh:mm:ss'));
   console.log(utils.isEmailOrPhone('aaa'));
+  console.log(localStorage.getItem('userName'));
+  console.log(sessionStorage.getItem('userName'));
   utils.ajax('http://www.baidu.com');
 });

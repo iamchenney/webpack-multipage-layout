@@ -1,4 +1,4 @@
-const DOMAIN = 'http://sem.yushanapp.com';
+const DOMAIN = '/api';
 
 const moduleExports = {
   getApiUrl(apiName) {

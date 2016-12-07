@@ -6,9 +6,10 @@
     "build": "node webpack-config/clean/before-build.script.js && webpack --progress --colors --bail",
     "dev": "node webpack-config/clean/before-build.script.js && webpack --progress --colors --config ./webpack.dev.config.js",
     "watch": "node webpack-config/clean/before-build.script.js && webpack --progress --colors --watch --config ./webpack.dev.config.js",
-    "start": "webpack-dev-server --open --inline --hot --progress --colors --compress --devtool eval  --content-base build/",
+    "start": "webpack-dev-server --open --inline --hot --progress --colors --compress --devtool eval --config ./webpack.dev.config.js  --content-base build/",
     "profile": "node webpack-config/clean/before-build.script.js && webpack --colors --profile --display-modules",
-    "dll": "node webpack-config/clean/before-build-dll.script.js && webpack --progress --colors --config ./webpack-dll.config.js"
+    "dll": "node webpack-config/clean/before-build-dll.script.js && webpack --progress --colors --config ./webpack-dll.config.js",
+    "mock": "json-server --watch mock/db.json --routes mock/routes.json --port 9090"
   },
   "keywords": [
     "webpack",

@@ -139,6 +139,9 @@ $(() => {
   console.log(utils.dateFormat(new Date(), 'yyyy-MM-dd hh:mm:ss'));
   console.log(apiUrl.getApiUrl('getUser'));
 
+  console.log(localStorage.getItem('userName'));
+  console.log(sessionStorage.getItem('userName'));
+
   $('.start').hover(function () {
     $(this).attr('src', './images/颜色填充-6-拷贝@2x.png');
   }, function () {
