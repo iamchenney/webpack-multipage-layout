@@ -1,4 +1,6 @@
-const DOMAIN = '/api';
+const config = require('configModule');
+
+const DOMAIN = config.API_ROOT;
 
 const moduleExports = {
   getApiUrl(apiName) {
