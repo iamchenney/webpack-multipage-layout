@@ -1,0 +1,16 @@
+<table id="myTable" class="tablesorter">
+<thead>
+<tr>
+    <th>搜索词</th>
+    <th>数量</th>
+</tr>
+</thead>
+<tbody>
+<% for (var word in data) { if(word == 'count') continue; %>
+  <tr>
+      <td><%=word %></td>
+      <td><%=data[word].count %></td>
+  </tr>
+<% } %>
+</tbody>
+</table>
