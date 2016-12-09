@@ -113,12 +113,12 @@ const moduleExports = {
     })
     .done(function done(json) {
       if (json.status) {
-        if (json.status.code !== 200) {
-          alert(json.status.message || '操作发生错误', 'danger', '数据错误');
+        if (json.status !== 'success') {
+          alert(json.message || '操作发生错误');
           deferred.reject();
         } else {
-          if (json.result) {
-            deferred.resolve(json.result);
+          if (json.data) {
+            deferred.resolve(json.data);
           } else {
             deferred.resolve(json);
           }

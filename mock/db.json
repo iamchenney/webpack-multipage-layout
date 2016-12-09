@@ -24,5 +24,29 @@
       "exchangeRecords": []
     },
     "success": true
+  },
+  "getSKWord": {
+    "data": {
+        "直播平台": {
+            "count": 84,
+            "最大的直播平台是什么": {
+                "count": 3
+            },
+            "最开放的直播平台": {
+                "count": 15
+            }
+        },
+        "录音平台": {
+            "count": 44,
+            "最大的录音平台是什么": {
+                "count": 13
+            },
+            "最开放的录音平台": {
+                "count": 20
+            }
+        }
+    },
+    "message": "",
+    "status": "success"
   }
 }

@@ -1,4 +1,5 @@
 {
+  "/api/keywords/sword": "/getSKWord",
   "/api/": "/",
   "/account/:resource/:id/show": "/:resource/:id",
   "/user/:category": "/posts/:id?category=:category"

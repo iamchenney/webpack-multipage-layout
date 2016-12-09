@@ -7,6 +7,7 @@ const moduleExports = {
     return DOMAIN + this[apiName];
   },
   getUser: '/user/userId',
+  getSKWord: '/keywords/sword',
   getAccountWeekCost: '/account/getweekcost',
   getAccountTwoWeek: '/account/twoweek',
   getAccountAll: '/account/all',
